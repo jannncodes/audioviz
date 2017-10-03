@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+      body {
+          margin: 0px;
+          overflow: hidden;
+      }
+      #controls {
+      position: absolute;
+      background-color: 0x334351;
+      opacity: 0.8;
+      color: white;
+      text-align: center;
+      top: 0px;
+      width: 100%;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+<div id="controls">
+  <div style="display:inline-block;">
+    <span>size of display</span>
+      <select id="rowWidth">
+        <option>2</option>
+        <option>4</option>
+        <option selected>8</option>
+        <option>16</option>
+        <option>32</option>
+        <option>64</option>
+      </select>
+  </div>
+  &nbsp;&nbsp;&nbsp;
+  <div style="display:inline-block;">
+    <span>choose a song</span>
+    <select id="song">
+      <option>Heartbeats by the Knife</option>
+      <option>Oblivion by Grimes</option>
+      <option selected>Escape Artist by Zoe Keating</option>
+      <option>Toe Cutter - Thumb Buster by Thee Oh Sees</option>
+    </select>
+  </div>
+  &nbsp;&nbsp;&nbsp;
+  <div style="display:inline-block;">
+    <input id="fileUpload" type="file" accept="audio/*">
+  </div>
+<div id="container"></div>
+<script src="public/bundle.js"></script>
+</body>
+</html>
